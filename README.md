@@ -16,3 +16,12 @@ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 
 export TURTLEBOT3_MODEL=waffle_pi
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+
+## manipulatotion
+
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation_simulations.git
+git clone https://github.com/ROBOTIS-GIT/open_manipulator_dependencies.git
+sudo apt install ros-noetic-ros-control* ros-noetic-control* ros-noetic-moveit*
+cd .. && catkin_make
