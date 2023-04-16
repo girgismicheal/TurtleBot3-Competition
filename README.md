@@ -25,3 +25,6 @@ git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation_simulations.git
 git clone https://github.com/ROBOTIS-GIT/open_manipulator_dependencies.git <br>
 sudo apt install ros-noetic-ros-control* ros-noetic-control* ros-noetic-moveit* <br>
 cd .. && catkin_make <br>
+
+## End nodes
+killall gzserver && killall gzclient
