@@ -32,22 +32,22 @@ killall gzserver && killall gzclient
 
 
 ## inti env
-export TURTLEBOT3_MODEL=waffle_pi
-source /home/girgis/Desktop/foot_ball_ws/devel/setup.bash
-roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+export TURTLEBOT3_MODEL=waffle_pi <br>
+source /home/girgis/Desktop/foot_ball_ws/devel/setup.bash<br>
+roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch<br>
 
-export TURTLEBOT3_MODEL=waffle_pi
-roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+export TURTLEBOT3_MODEL=waffle_pi<br>
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch<br>
 
 
-roslaunch turtlebot3_gazebo turtlebot3_world.launch
+roslaunch turtlebot3_gazebo turtlebot3_world.launch<br>
 
 ## reset env
-killall gzserver && killall gzclient
-roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+killall gzserver && killall gzclient<br>
+roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch<br>
 
 ## Run Logic
-cd /Desktop/foot_ball_ws/src/ROS_turtlebot3_OpenCV
-python3 Ball_and_Goal_follower.py
+cd /Desktop/foot_ball_ws/src/ROS_turtlebot3_OpenCV<br>
+python3 Ball_and_Goal_follower.py<br>
 
 
