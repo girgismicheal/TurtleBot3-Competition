@@ -28,3 +28,18 @@ cd .. && catkin_make <br>
 
 ## End nodes
 killall gzserver && killall gzclient
+
+
+
+## inti env
+export TURTLEBOT3_MODEL=waffle_pi
+source /home/girgis/Desktop/foot_ball_ws/devel/setup.bash
+roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+
+export TURTLEBOT3_MODEL=waffle_pi
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
+
+
