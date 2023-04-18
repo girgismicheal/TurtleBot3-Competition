@@ -42,4 +42,12 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
 
+## reset env
+killall gzserver && killall gzclient
+roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+
+## Run Logic
+cd /Desktop/foot_ball_ws/src/ROS_turtlebot3_OpenCV
+python3 Ball_and_Goal_follower.py
+
 
